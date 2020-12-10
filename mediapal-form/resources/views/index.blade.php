@@ -31,11 +31,10 @@
                 <!--Contacts-->
                 <nav class="vlt-navbar-contacts d-none d-md-block">
                     <ul>
-                        <li><a href="tel:+79281012345">+254 700 000 000</a></li>
+                        <li><a href="tel:+79281012345">+254 794 891 999</a></li>
                         <li class="sep">/</li>
-                        <li><a href="#">info@workscout.com</a></li>
-                        <li class="sep">/</li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="#">info@mediapal.net</a></li>
+
                     </ul>
                 </nav>
             </div>
@@ -112,7 +111,7 @@
                                 <div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
                                     <h5 class="vlt-display-1 has-white-color">Work Scout</h5>
                                     <div class="vlt-gap-10"></div>
-                                    <h1 class="vlt-large-heading has-white-color">Let’s Find Jobs For You</h1>
+                                    <h1 class="vlt-large-heading has-white-color">Web, Social and Mobile Advertising</h1>
                                     <div class="vlt-gap-40"></div>
                                     <div class="row">
                                         <div class="col-auto">
@@ -163,24 +162,24 @@
                                 <!--Animated Block-->
                                 <div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
                                     <!--Counter Up-->
-                                    <div class="vlt-counter-up" data-ending-number="8" data-animation-speed="2000" data-delimiter="">
+                                    <div class="vlt-counter-up" data-ending-number="90" data-animation-speed="2000" data-delimiter="">
                                         <span class="counter">0</span><sup>+</sup>
                                     </div>
-                                    <div class="vlt-gap-40"></div>
-                                    <h6>Years <br>Experience <br>Working</h6>
+                                    <div class="vlt-gap-40">
+                                        <h6><br>Clients</h6>
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-12">
                                 <!--Animated Block-->
                                 <div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-                                    <h4>Find your next job, fast. <br> <span
-                                            class="has-first-color">Subscribe To Get The Latest Job Alerts</span></h4>
+                                    <h4>Join our lucrative publisher program <br> <span class="has-first-color">Fill the form to get more details</span></h4>
                                 </div>
                                 <div class="vlt-gap-70"></div>
+                                <form class="form-group" method="post" action="{{route('storeUserData')}}" enctype="multipart/form-data">
+                                    {{csrf_field()}}
                                 <div class="row">
-
-
-
                                     <div class="col-md-6">
                                         <!--Animated Block-->
                                         <div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
@@ -189,30 +188,22 @@
 
                                                 <div class="form-group">
                                                     <label for="exampleName">Name</label>
-                                                    <input type="text" class="form-control" id="exampleName" aria-describedby="namelHelp" placeholder="Enter Your Name">
+                                                    <input type="text" class="form-control" id="exampleName" aria-describedby="namelHelp" placeholder="Enter Your Name" name="name">
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label for="exampleInputEmail1">Email address</label>
-                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label for="exampleNumber">Phone Number</label>
-                                                    <input type="text" class="form-control" id="exampleNumber" aria-describedby="namelHelp" placeholder="Enter Your Phone Number">
+                                                    <input type="text" class="form-control" id="exampleNumber" aria-describedby="namelHelp" placeholder="Enter Your Phone Number" name="phone_number">
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label for="exampleEducation">Select Highest Education Level</label>
-                                                    <select class="form-control" id="exampleEducation">
-                                                        <option>Education Level</option>
-                                                        <option>PHD</option>
-                                                        <option>Masters</option>
-                                                        <option>Bachelors</option>
-                                                        <option>Dilpoma</option>
-                                                        <option>Certificate</option>
-                                                        <option>High School</option>
-                                                    </select>
+                                                    <label for="exampleInputEmail1">Company</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Company" name="company">
                                                 </div>
 
                                             </div>
@@ -223,16 +214,8 @@
                                         <!--Animated Block-->
                                         <div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
                                             <div class="form-group">
-                                                <label for="exampleAreaofStudy">Select Area of Study</label>
-                                                <select class="form-control" id="exampleAreaofStudy">
-                                                    <option>Education Level</option>
-                                                    <option>PHD</option>
-                                                    <option>Masters</option>
-                                                    <option>Bachelors</option>
-                                                    <option>Dilpoma</option>
-                                                    <option>Certificate</option>
-                                                    <option>High School</option>
-                                                </select>
+                                                <label for="exampleInputEmail1">Location</label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Location" name="location">
                                             </div>
 
                                             <div class="form-group">
@@ -280,6 +263,7 @@
                                         </div>
                                         <div class="vlt-gap-40"></div>
                                     </div>
+
                                     <div class="offset-4">
                                         <!--Animated Block-->
                                         <div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
@@ -295,11 +279,11 @@
                                         <div class="vlt-animated-block" style="animation-delay:500ms; animation-duration:700ms;">
                                             <!--Services-->
                                             <div class="vlt-services">
-                                                <button class="vlt-btn vlt-btn--secondary">Subscribe to receive alerts</button>
+                                                <button class="vlt-btn vlt-btn--secondary">Submit</button>
                                             </div>
                                         </div>
                                     </div>
-
+                                  </form>
                                     <div class="col-md-2">
                                         <!--Animated Block-->
                                         <div class="vlt-animated-block" style="animation-delay:500ms; animation-duration:700ms;">
@@ -336,12 +320,12 @@
                                     <div class="vlt-gap-50"></div>
                                     <div class="has-white-color">
                                         <h6 class="vlt-display-1 has-gray-color">Email:</h6>
-                                        <div class="vlt-gap-5"></div><a href="#">info@worksocut.com</a>
+                                        <div class="vlt-gap-5"></div><a href="#">info@mediapal.net</a>
                                     </div>
                                     <div class="vlt-gap-30"></div>
                                     <div class="has-white-color">
                                         <h6 class="vlt-display-1 has-gray-color">Phone:</h6>
-                                        <div class="vlt-gap-5"></div><a href="#">0730909090</a>
+                                        <div class="vlt-gap-5"></div><a href="#">(+254) 794 891 999</a>
                                     </div>
                                     <div class="vlt-gap-40"></div><a class="vlt-btn vlt-btn--secondary" href="#"><span
                                             class="vlt-btn__text">Get direction</span><span class="vlt-btn__icon vlt-btn__icon--right"><svg
