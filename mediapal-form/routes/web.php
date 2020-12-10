@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InterestedPersonsController;
+use App\Mail\SendDocument;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,14 @@ Route::get('/', function () {
 });
 
 Route::post('/submit',[InterestedPersonsController::class,'storeUserData'])->name('storeUserData');
+
+Route::get('/send-mail', function(){
+    $details = [
+        'title' => 'MediaPal Programatic',
+        'body' => 'Welcome to a world of awesomeness. Down load link at'
+    ];
+
+    \Mail::to('meshkemz@gmail.com')->send(new \App\Mail\SendDocument($details));
+
+    dd('mail is sent successfully');
+});

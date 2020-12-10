@@ -12,6 +12,6 @@ class InterestedPersonsController extends Controller
 
             InterestedPersons::create($request->all());
 
-        return view('index');
+        return redirect('/send-mail');
     }
 }
