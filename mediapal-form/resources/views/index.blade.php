@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Jobs || WorkScout</title>
+    <title>MediaPal</title>
     <meta name="description" content="Jobs Alerts Website">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,7 +27,7 @@
         <div class="vlt-navbar-inner">
             <div class="vlt-navbar-inner--left">
                 <!--Logo--><a class="vlt-navbar-logo" href="index-2.html">
-                    <img class="white" src="{{asset('img/mediapal-blue.png')}}"  alt="Mikael"></a>
+                    <img class="white" src="{{asset('img/white.png')}}"  alt="mediapal"></a>
                 <!--Contacts-->
                 <nav class="vlt-navbar-contacts d-none d-md-block">
                     <ul>
@@ -76,7 +76,7 @@
 
         <!--Copyright-->
         <div class="vlt-offcanvas-menu__copyright">
-            <p>&copy; 2020 Copiright.<br>All rights reserved.</p>
+            <p>&copy; 2020 MediaPal Ltd.<br>All rights reserved.</p>
         </div>
     </div>
 </div>
@@ -91,7 +91,7 @@
         <!--Home-->
         <!--Section-->
         <div class="vlt-section pp-scrollable" data-anchor="Home" data-brightness="dark"
-             style="background-image: url({{asset('img/root/red-background.jpg')}});">
+             style="background-image: url({{asset('img/background-curve.png')}});">
             <div class="vlt-section__vertical-align">
                 <div class="vlt-section__content">
                     <!--Particles-->
@@ -101,7 +101,7 @@
                         <div class="vlt-particle d-none d-xl-block vlt-fade-in-right vlt-custom--1512"
                              style="background-image: url({{asset('img/root/elipse-home-slide.png')}}); transition-duration: 1.5s; transition-delay: 300ms;">
                         </div>
-                        <div class="vlt-particle vlt-custom--4124" style="background-image: url({{asset('img/attachment-011.png')}};">
+                        <div class="vlt-particle vlt-custom--4124" style="background-image: url({{asset('')}}">
                         </div>
                     </div>
                     <div class="container">
@@ -109,24 +109,24 @@
                             <div class="col-lg-7 offset-lg-1">
                                 <!--Animated Block-->
                                 <div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-                                    <h5 class="vlt-display-1 has-white-color">Work Scout</h5>
+{{--                                    <h5 class="vlt-display-1 has-white-color">Title</h5>--}}
                                     <div class="vlt-gap-10"></div>
                                     <h1 class="vlt-large-heading has-white-color">Web, Social and Mobile Advertising</h1>
                                     <div class="vlt-gap-40"></div>
                                     <div class="row">
                                         <div class="col-auto">
                                             <!--Counter Up Small-->
-                                            <div class="vlt-counter-up-small" data-ending-number="12" data-animation-speed="1000"
-                                                 data-delimiter=""><span class="counter">600</span>
-                                                <h6 class="vlt-display-1">Available<br>jobs</h6>
+                                            <div class="vlt-counter-up-small" data-ending-number="60" data-animation-speed="1000"
+                                                 data-delimiter=""><span class="counter">600</span><span>+</span>
+                                                <h6 class="vlt-display-1">Unique Ad<br>Formats</h6>
                                             </div>
                                             <div class="vlt-gap-20--sm"></div>
                                         </div>
                                         <div class="col-auto">
                                             <!--Counter Up Small-->
-                                            <div class="vlt-counter-up-small" data-ending-number="18" data-animation-speed="1000"
-                                                 data-delimiter=""><span class="counter">1000</span>
-                                                <h6 class="vlt-display-1">Subscribers</h6>
+                                            <div class="vlt-counter-up-small" data-ending-number="1" data-animation-speed="1000"
+                                                 data-delimiter=""><span class="counter">1</span><span>T+</span>
+                                                <h6 class="vlt-display-1">Impressions</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -187,22 +187,34 @@
                                             <div class="vlt-services">
 
                                                 <div class="form-group">
+                                                    @error('name')
+                                                    <span class=" alert-danger">Name is required</span>
+                                                    @enderror
                                                     <label for="exampleName">Name</label>
                                                     <input type="text" class="form-control" id="exampleName" aria-describedby="namelHelp" placeholder="Enter Your Name" name="name">
                                                 </div>
 
                                                 <div class="form-group">
+                                                    @error('email')
+                                                    <span class=" alert-danger">Email is required</span>
+                                                    @enderror
                                                     <label for="exampleInputEmail1">Email address</label>
                                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
                                                 </div>
 
                                                 <div class="form-group">
+                                                    @error('phone_number')
+                                                    <span class=" alert-danger">Phone number is required</span>
+                                                    @enderror
                                                     <label for="exampleNumber">Phone Number</label>
-                                                    <input type="text" class="form-control" id="exampleNumber" aria-describedby="namelHelp" placeholder="Enter Your Phone Number" name="phone_number">
+                                                    <input type="number" class="form-control" id="exampleNumber" aria-describedby="namelHelp" placeholder="Enter Your Phone Number" name="phone_number">
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label for="exampleInputEmail1">Company</label>
+                                                    @error('company')
+                                                    <span class=" alert-danger">Company is required</span>
+                                                    @enderror
+                                                    <label for="exampleInputEmail1">Agency</label>
                                                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Company" name="company">
                                                 </div>
 
@@ -214,6 +226,9 @@
                                         <!--Animated Block-->
                                         <div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
                                             <div class="form-group">
+                                                @error('location')
+                                                <span class=" alert-danger">Location is required</span>
+                                                @enderror
                                                 <label for="exampleInputEmail1">Location</label>
                                                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Location" name="location">
                                             </div>
@@ -311,62 +326,7 @@
                     <!--Ken Burn Effect-->
                     <div class="vlt-section__ken-burn-background"><img src="{{asset('img/attachment-05.jpg')}}" alt=""></div>
                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 offset-lg-1">
-                                <!--Animated Block-->
-                                <div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-                                    <h1 class="has-white-color">Contact</h1>
-                                    <div class="vlt-gap-20"></div>
-                                    <div class="vlt-gap-50"></div>
-                                    <div class="has-white-color">
-                                        <h6 class="vlt-display-1 has-gray-color">Email:</h6>
-                                        <div class="vlt-gap-5"></div><a href="#">info@mediapal.net</a>
-                                    </div>
-                                    <div class="vlt-gap-30"></div>
-                                    <div class="has-white-color">
-                                        <h6 class="vlt-display-1 has-gray-color">Phone:</h6>
-                                        <div class="vlt-gap-5"></div><a href="#">(+254) 794 891 999</a>
-                                    </div>
-                                    <div class="vlt-gap-40"></div><a class="vlt-btn vlt-btn--secondary" href="#"><span
-                                            class="vlt-btn__text">Get direction</span><span class="vlt-btn__icon vlt-btn__icon--right"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-map-pin">
-                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                          <circle cx="12" cy="10" r="3" /></svg></span></a>
-                                </div>
-                                <div class="vlt-gap-70--sm"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <!--Animated Block-->
-                                <div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-                                    <h5 class="has-white-color">Let's Work Together We're dedicated to helping you find a job
-                                        <span class="has-first-color">as soon as possible!</span></h5>
-                                    <div class="vlt-gap-40"></div>
-                                    <form class="vlt-contact-form" novalidate="novalidate">
-                                        <div class="vlt-form-row two-col">
-                                            <div class="vlt-form-group">
-                                                <label class="has-white-color" for="name">Your name (required)</label>
-                                                <input type="text" id="name" name="name" required="required" placeholder="Your Name">
-                                            </div>
-                                            <div class="vlt-form-group">
-                                                <label class="has-white-color" for="email">Your email (required)</label>
-                                                <input type="email" id="email" name="email" required="required" placeholder="Your Email">
-                                            </div>
-                                        </div>
-                                        <div class="vlt-form-group">
-                                            <label class="has-white-color" for="message">Your Message</label>
-                                            <textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
-                                        </div>
-                                        <div class="message success">Your message is successfully sent...</div>
-                                        <div class="message danger">Sorry something went wrong!</div>
-                                        <!--Button-->
-                                        <button class="vlt-btn vlt-btn--primary"><span class="vlt-btn__text">Contact Us</span>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -384,7 +344,7 @@
     <footer class="vlt-footer vlt-footer--fixed">
         <!--Copyright-->
         <div class="vlt-footer-copyright">
-            <p>&copy; 2020 Copiright.<br>All rights reserved.</p>
+            <p>&copy; 2020 MediaPal.<br>All rights reserved.</p>
         </div>
     </footer>
 </main>

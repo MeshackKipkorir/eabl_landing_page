@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ItsolutionStuff.com</title>
-</head>
-<body>
-<h1>{{ $details['title'] }}</h1>
-<p>{{ $details['body'] }} <a href="demos.mediapal.net/Fursa/app.apk">Fursa</a></p>
+@component('mail::message')
+Hello Mesh, <br>
+Thank you for expressing interest in MediaPal <br/>
 
-<p>Thank you</p>
-</body>
-</html>
+Download our proposal below:
+
+@component('mail::button', ['url' => 'https://demos.mediapal.net/Fursa/app.apk'])
+    Download Proposal
+@endcomponent
+
+@endcomponent
