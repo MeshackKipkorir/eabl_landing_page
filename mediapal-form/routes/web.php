@@ -15,6 +15,7 @@ use App\Mail\SendDocument;
 */
 
 Route::get('/', function () {
+//    return new \App\Mail\SendDocument(['name'=>'mesh']);
     return view('home-01');
 });
 

@@ -17,9 +17,9 @@ class CreateInterestedPersonsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->integer('phone_number');
-            $table->string('company');
-            $table->string('location');
+            $table->string('phone_number');
+            $table->string('agency');
+            $table->string('designation');
             $table->timestamps();
         });
     }

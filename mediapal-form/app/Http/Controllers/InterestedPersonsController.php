@@ -14,9 +14,9 @@ class InterestedPersonsController extends Controller
             $this->validate($request,[
                 'name' => 'required|string',
                 'email' => 'required|email',
-                'phone_number' => 'required',
-                'company' => 'required|string',
-                'location' => 'required|string'
+                'phone_number' => 'required|string',
+                'agency' => 'required|string',
+                'designation' => 'required|string'
             ]);
 
             InterestedPersons::create($request->all());

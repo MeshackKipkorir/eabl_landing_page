@@ -9,7 +9,7 @@ class InterestedPersons extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name','email','phone_number','company','location'];
+    protected $fillable = ['name','email','phone_number','agency','designation'];
 
     protected $hidden = ['created_at','updated_at'];
 }

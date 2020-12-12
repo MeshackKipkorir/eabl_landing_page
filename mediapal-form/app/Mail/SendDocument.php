@@ -31,7 +31,7 @@ class SendDocument extends Mailable
      */
     public function build()
     {
-        return $this->subject('MediPal Programatic')
-                    ->markdown('mail');
+        return $this->subject('MediaPal Programmatic Network')
+                    ->markdown('email');
     }
 }

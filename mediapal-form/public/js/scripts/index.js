@@ -1,6 +1,5 @@
-console.log('logged');
-
 
 setTimeout(function(){
-    window.location.href="#Subscribe";
+    window.location.href="#form";
 },3000)
+

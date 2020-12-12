@@ -75,7 +75,7 @@
                             <div class="contact-form-wrapper">
                                 <!-- Start Contact Form -->
                                 <div class="axil-contact-form contact-form-style-1">
-                                    <h3 class="title">Please fill in the details below for inquiries</h3>
+                                    <h3 class="title">Please fill all the fields</h3>
                                     <form method="post" action="{{route('storeUserData')}}" enctype="multipart/form-data">
                                         {{csrf_field()}}
 
@@ -100,12 +100,12 @@
                                             <span class="focus-border"></span>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="company">
+                                            <input type="text" name="agency">
                                             <label>Agency/Brand</label>
                                             <span class="focus-border"></span>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="location">
+                                            <input type="text" name="designation">
                                             <label>Designation</label>
                                             <span class="focus-border"></span>
                                         </div>
@@ -116,10 +116,6 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <div class="callto-action-wrapper text-center">
-                                        <span class="text">Or call us now</span>
-                                        <span><i class="fal fa-phone-alt"></i> <a href="tel:0794891995">(+254) 794 891 999</a></span>
-                                    </div>
                                 </div>
                                 <!-- End Contact Form -->
                             </div>
@@ -184,8 +180,8 @@
                                 <div class="icon">
                                     <img src="assets/images/counterup/shape-03.png" alt="Shape Images">
                                 </div>
-                                <h3 class="count">20</h3>
-                                <p>Ad Formats</p>
+                                <h3 class="">500 +</h3>
+                                <p>Clients</p>
                             </div>
                         </div>
                         <!-- End Counterup Area -->
